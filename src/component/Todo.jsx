@@ -7,12 +7,13 @@ const Todo = ({ todos }) => {
       <ul>
         {todos.map((todo, index) => (
           <li key={index}>
-            <h3>
+            <h2>
             {todo.text}
+              </h2>
             {todo.reminder && (
               <span> (Reminder: {new Date(todo.reminder).toLocaleString()})</span>
             )}
-            </h3>
+            
           </li>
         ))}
       </ul>
